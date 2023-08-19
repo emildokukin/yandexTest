@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-family: "YS Text", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 981px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $headers;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: minMaxValues(-0.6, -1.5);
+}
+
+h1 {
+    font-size: minMaxValues(36, 72);
+}
+
+h2 {
+    font-size: minMaxValues(32, 56);
+    letter-spacing: minMaxValues(-0.6, -1.1);
+}
+
+h3 {
+    font-size: minMaxValues(32, 48);
+    letter-spacing: minMaxValues(-0.6, -1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: $paragraph;
+    font-size: minMaxValues(16, 24);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+}
+
+button {
+    display: inline-flex;
+    padding: 21px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+    border-radius: 36px;
+    background: $button;
+    box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+    transition: 0.2s ease;
+
+    color: $headers;
+    font-size: minMaxValues(18, 24);
+    font-style: normal;
+    font-family: "YS Text", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    text-align: center;
+
+    @include mobile {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 25px 0px rgba(255, 222, 64, 0.6);
+    }
+}
+
+.kek {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1440px;
+    margin: 0 auto;
+    z-index: 99999;
+    opacity: 0.3;
+}
+
+.mek {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 375px;
+    margin: 0 auto;
+    z-index: 99999;
+    opacity: 0.3;
+}

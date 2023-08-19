@@ -1,0 +1,7 @@
+@function makePixels($res) {
+    @return $res;
+}
+
+@function minMaxValues($min, $max) {
+    @return calc(#{makePixels($min)}px + (#{$max} - #{$min}) * ((100vw - 375px) / 1545));
+}
